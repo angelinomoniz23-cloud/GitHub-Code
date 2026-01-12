@@ -1,0 +1,602 @@
+<!doctype html>
+<html lang="pt">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>SAF CONSULTORIA — Planilhas & Documentos (Angola)</title>
+<link rel="icon" href="image1.jpg" type="image1.jpg">
+<link rel="stylesheet" href="extern.css">
+</head>
+<body>
+
+<!-- Top alert -->
+<div id="topAlert" class="top-alert" role="status" aria-live="polite">✅ Planilha adicionada ao carrinho com sucesso!</div>
+
+<!-- Skip link -->
+<a href="#main" class="skip">Ir para o conteúdo</a>
+
+<!-- Topbar institucional -->
+<div class="topbar" aria-hidden="false">
+  <div class="inner">
+    <a href="#" target="_blank">Portal do Governo</a>
+    <a href="#">Transparência</a>
+    <a href="#contactos">Contactos</a>
+  </div>
+</div>
+
+<!-- Header -->
+<header>
+  <div class="header-inner">
+    <a class="brand" href="#inicio" aria-label="SAF Consultoria">
+      <img src="image2.jpg" alt="image2.jpg">
+      <div>
+        <div class="title">SAF CONSULTORIA</div>
+        <div class="subtitle">Planilhas & Documentos Legais (Angola)</div>
+       
+      </div>
+    </a>
+
+    <nav class="desktop" aria-label="Menu principal">
+      <a data-scroll="#inicio">Início</a>
+      <a data-scroll="#Serviços">Serviços</a>
+      <a data-scroll="#Vendas">Vendas</a>
+      <a data-scroll="#contactos"> Contactos</a>
+    </nav>
+
+    <div style="display:flex;gap:10px;align-items:center">
+      <div class="search" role="search">
+        <input id="searchInput" type="search" placeholder="Pesquisar documentos..." aria-label="Pesquisar" />
+        <button id="searchBtn" title="Pesquisar">OK</button>
+      </div>
+      <button class="mobile-toggle" aria-label="Abrir menu" onclick="toggleMobileMenu()">☰</button>
+    </div>
+  </div>
+</header>
+
+<!-- MAIN -->
+<main id="main">
+
+  <!-- HERO -->
+  <section id="inicio" class="hero" aria-labelledby="heroTitle">
+    <div class="wrap">
+      <h1 id="heroTitle">Planilhas e documentos baseados na legislação angolana</h1>
+      <p>Modelos prontos, dashboards e guias legais para apoiar contabilistas, gestores e empresas em Angola.</p>
+      <div class="actions" style="margin-top:16px">
+        <a class="btn doc" data-scroll="#documentos"> Explorar Documentos</a>
+        <a class="btn sheet" data-scroll="#planilhas">Ver Planilhas</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CAROUSEL (kept simple) -->
+  <section aria-label="Destaques" class="section" style="padding-top:18px;padding-bottom:18px">
+    <div class="carousel-wrap" aria-hidden="false" style="max-width:var(--maxw);margin:0 auto">
+      <div class="carousel" id="carousel" style="display:flex;overflow:hidden">
+        <div class="slide" style="min-width:100%;display:flex;align-items:center;gap:14px;padding:22px;background:linear-gradient(90deg, rgba(0,119,119,0.04), rgba(0,185,185,0.02))">
+          <img src="image2.jpg" alt="Planilhas" style="width:140px;height:92px;object-fit:cover;border-radius:8px">
+          <div>
+            <h3>Planilhas de Gestão Financeira</h3>
+            <p class="meta">Fluxo de caixa, conciliação e projeções adaptadas ao contexto angolano.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="Serviços">
+    <h3>Tipos de Consultoria</h3>
+    <div class="gest-emp">
+      <h4>Gestão Financeira Pessoal </h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae reiciendis eius corrupti a debitis aperiam harum quo dicta architecto, rem provident earum doloribus! Excepturi aperiam iure alias quo eos natus!</p>
+    <div><button class="add-cart-btn" data-id="mapa-iva">Marcar Consulta</button></div>
+    
+   </div>
+  </section>
+
+  <!-- MODELOS -->
+   <main id="Vendas">
+  <section class="section" aria-labelledby="modelosTitle">
+    <div class="title" id="modelosTitle"><h2> Modelos de Documento</h2></div>
+    <div class="grid" id="docsGrid">
+      <article class="card" data-id="fluxo-caixa">
+        <h3>Fluxo de Caixa Mensal</h3>
+        <p>Todas as empresas precisam controlar entradas e saídas.</p>
+        <div class="meta">Formato: EXCEL, POWER BI, ODOO</div>
+        <div class="card-actions">
+          <div class="left"><small class="meta">EXCEL • Modelo</small></div>
+          <div><button class="add-cart-btn" data-id="fluxo-caixa">Adicionar ao Carrinho</button></div>
+        </div>
+      </article>
+
+      <article class="card" data-id="folha-pagamento">
+        <h3>Folha de Pagamento + Cálculo de IRT e Segurança Social</h3>
+        <p>Obrigatório por lei trabalhista.</p>
+        <div class="meta">Formato: EXCEL, POWER BI, ODOO</div>
+        <div class="card-actions">
+          <div class="left"><small class="meta">EXCEL • Modelo</small></div>
+          <div><button class="add-cart-btn" data-id="folha-pagamento">Adicionar ao Carrinho</button></div>
+        </div>
+      </article>
+
+      <article class="card" data-id="livro-vendas-compras">
+        <h3>Livro de Vendas e Compras (com IVA)</h3>
+        <p>Necessário para o imposto mensal.</p>
+        <div class="meta">Formato: EXCEL, POWER BI, ODOO</div>
+        <div class="card-actions">
+          <div class="left"><small class="meta">EXCEL • Modelo</small></div>
+          <div><button class="add-cart-btn" data-id="livro-vendas-compras">Adicionar ao Carrinho</button></div>
+        </div>
+      </article>
+
+      <article class="card" data-id="controle-stock">
+        <h3>Controle de Stock / Inventário</h3>
+        <p>Evita desvios e controla mercadorias.</p>
+        <div class="meta">Formato: EXCEL, POWER BI, ODOO</div>
+        <div class="card-actions">
+          <div class="left"><small class="meta">EXCEL • Modelo</small></div>
+          <div><button class="add-cart-btn" data-id="controle-stock">Adicionar ao Carrinho</button></div>
+        </div>
+      </article>
+
+      <article class="card" data-id="balancete">
+        <h3>Balancete / DR</h3>
+        <p>Análise do desempenho financeiro.</p>
+        <div class="meta">Formato: EXCEL, POWER BI, ODOO</div>
+        <div class="card-actions">
+          <div class="left"><small class="meta">EXCEL • Modelo</small></div>
+          <div><button class="add-cart-btn" data-id="balancete">Adicionar ao Carrinho</button></div>
+        </div>
+      </article>
+
+      <article class="card" data-id="mapa-iva">
+        <h3>Mapa de IVA e Relatórios Fiscais</h3>
+        <p>Entrega obrigatória às Finanças.</p>
+        <div class="meta">Formato: EXCEL, POWER BI, ODOO</div>
+        <div class="card-actions">
+          <div class="left"><small class="meta">EXCEL • Modelo</small></div>
+          <div><button class="add-cart-btn" data-id="mapa-iva">Adicionar ao Carrinho</button></div>
+        </div>
+      </article>
+
+      <article class="card" data-id="contratos-recibos">
+        <h3>Contratos, Fichas e Recibos padrão SAF</h3>
+        <p>Parte administrativa complementar.</p>
+        <div class="meta">Formato: EXCEL, PDF</div>
+        <div class="card-actions">
+          <div class="left"><small class="meta">Modelos</small></div>
+          <div><button class="add-cart-btn" data-id="contratos-recibos">Adicionar ao Carrinho</button></div>
+        </div>
+      </article>
+
+      <article class="card" data-id="documentos-contabeis">
+        <h3>Documentos Contabilísticos (Pacote)</h3>
+        <p>Documentos para apresentar a situação financeira.</p>
+        <div class="meta">Formato: EXCEL, PDF</div>
+        <div class="card-actions">
+          <div class="left"><small class="meta">Pacote</small></div>
+          <div><button class="add-cart-btn" data-id="documentos-contabeis">Adicionar ao Carrinho</button></div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- PLANILHAS -->
+  <section  class="section">
+    <div class="title"><h2>Planilhas e Dashboards</h2></div>
+    <div class="grid" id="sheetsGrid">
+      <article class="card" data-id="dashboard-financeiro">
+        <h3>Dashboard Financeiro</h3>
+        <p>KPIs e gráficos de performance.</p>
+        <div class="meta">Excel • Interativo</div>
+        <div class="card-actions">
+          <div class="left"><small class="meta">Dashboard</small></div>
+          <div><button class="add-cart-btn" data-id="dashboard-financeiro">Adicionar ao Carrinho</button></div>
+        </div>
+      </article>
+
+      <article class="card" data-id="apuramento-impostos">
+        <h3>Apuramento de Impostos</h3>
+        <p>Planilha para cálculo de tributos.</p>
+        <div class="meta">Excel • Guia incluído</div>
+        <div class="card-actions">
+          <div class="left"><small class="meta">Fiscal</small></div>
+          <div><button class="add-cart-btn" data-id="apuramento-impostos">Adicionar ao Carrinho</button></div>
+        </div>
+      </article>
+
+      <article class="card" data-id="controle-salarios">
+        <h3>Controle de Salários</h3>
+        <p>Cálculo de salários e contribuições.</p>
+        <div class="meta">Excel • Configurável</div>
+        <div class="card-actions">
+          <div class="left"><small class="meta">RH</small></div>
+          <div><button class="add-cart-btn" data-id="controle-salarios">Adicionar ao Carrinho</button></div>
+        </div>
+      </article>
+
+      <article class="card" data-id="curva-abc">
+        <h3>Curva ABC</h3>
+        <p>Classificação ABC do stock e priorização.</p>
+        <div class="meta">Excel • Análise</div>
+        <div class="card-actions">
+          <div class="left"><small class="meta">Estoque</small></div>
+          <div><button class="add-cart-btn" data-id="curva-abc">Adicionar ao Carrinho</button></div>
+        </div>
+      </article>
+
+      <article class="card" data-id="balanco">
+        <h3>Balanço Patrimonial</h3>
+        <p>Apresentação da situação patrimonial.</p>
+        <div class="meta">Excel • Demonstrativo</div>
+        <div class="card-actions">
+          <div class="left"><small class="meta">Financeiro</small></div>
+          <div><button class="add-cart-btn" data-id="balanco">Adicionar ao Carrinho</button></div>
+        </div>
+      </article>
+
+      <article class="card" data-id="dr">
+        <h3>Demonstração de Resultados (DR)</h3>
+        <p>Resultado do exercício e análise de margens.</p>
+        <div class="meta">Excel • Apresentação</div>
+        <div class="card-actions">
+          <div class="left"><small class="meta">Financeiro</small></div>
+          <div><button class="add-cart-btn" data-id="dr">Adicionar ao Carrinho</button></div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- DOCUMENTOS CONTABILÍSTICOS DEDICADOS -->
+  <section class="section">
+    <div class="title"><h2>Documentos Contabilísticos (Detalhados)</h2></div>
+    <div class="grid">
+      <article class="card"><h3>Balanço Patrimonial — Modelo Completo</h3><p>Ativos, passivos e património líquido com notas explicativas.</p><div class="meta">Excel • PDF</div></article>
+      <article class="card"><h3>Balancete — Modelo</h3><p>Saldos por conta para verificação e conferência.</p><div class="meta">Excel • Odoo</div></article>
+      <article class="card"><h3>DR / Demonstração de Resultados</h3><p>Relatório de desempenho por período.</p><div class="meta">Excel • Power BI</div></article>
+      <article class="card"><h3>Fluxo de Caixa — Projeção</h3><p>Previsão e análise de liquidez.</p><div class="meta">Excel • Interativo</div></article>
+      <article class="card"><h3>Notas Explicativas</h3><p>Modelos de notas para demonstrações financeiras.</p><div class="meta">Word • PDF</div></article>
+    </div>
+  </section>
+</main>
+  <!-- FEEDBACK -->
+  <section id="feedback" class="section">
+    <div class="title"><h2>Feedback & Comentários</h2></div>
+    <div class="feedback-card" role="region" aria-labelledby="feedbackTitle">
+      <input id="fb-name" type="text" placeholder="O teu nome (ex.: João)"/>
+      <input id="fb-email" type="email" placeholder="O teu email (opcional)"/>
+      <textarea id="fb-text" placeholder="Escreve o teu comentário..." rows="5"></textarea>
+      <div style="display:flex;gap:8px;justify-content:flex-end">
+        <button id="btnFeedback" class="btn">Enviar Feedback</button>
+      </div>
+
+      <div style="margin-top:18px">
+        <h3>Comentários</h3>
+        <div id="feedbackList"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LEIS & NORMAS -->
+  <section id="leis" class="section">
+    <div class="title"><h2>Leis & Normas Angolanas</h2></div>
+    <div class="grid">
+      <article class="card"><h3>Código Fiscal (Resumo)</h3><p>Pontos principais sobre obrigações fiscais.</p><div class="meta">Referência: legislação nacional</div></article>
+      <article class="card"><h3>Normas de Contabilidade</h3><p>Orientações para adaptação de relatórios.</p><div class="meta">Atualizado: 2025</div></article>
+      <article class="card"><h3>Checklist Legal</h3><p>Checklist para conformidade fiscal e contábil.</p><div class="meta">Checklist prático</div></article>
+    </div>
+  </section>
+
+  <!-- CONTACTOS -->
+  <section id="contactos" class="section" aria-labelledby="contactosTitle">
+    <div class="title" id="contactosTitle"><h2>Contactos</h2></div>
+    <div class="contact-grid" style="max-width:var(--maxw);margin:0 auto;display:flex;gap:18px;flex-wrap:wrap;align-items:flex-start">
+      <div class="contact-card card">
+        <h3>Fale connosco</h3>
+        <p class="meta">Pedidos de modelos personalizados e consultoria.</p>
+        <p style="margin-top:10px"><strong>Email:</strong> <a href="mailto:safconsulto@gmail.com">safconsulto@gmail.com</a><br>
+        <strong>Telefone:</strong> +244 944 778 154<br>
+        <strong>Local:</strong> Luanda — Angola</p>
+      </div>
+
+      <form id="contactForm" class="card" aria-label="Formulário de contacto" style="flex:1;min-width:320px;display:flex;flex-direction:column;gap:10px">
+        <label for="cname">Nome</label>
+        <input id="cname" name="cname" placeholder="O teu nome" required>
+        <label for="cemail">Email</label>
+        <input id="cemail" name="cemail" type="email" placeholder="email@exemplo.tld" required>
+        <label for="cmessage">Mensagem</label>
+        <textarea id="cmessage" name="cmessage" placeholder="Escreve a tua mensagem..." required></textarea>
+        <button type="submit" style="background:var(--saf-emerald-dark);color:#fff;padding:10px 14px;border-radius:8px;border:0;cursor:pointer;font-weight:700">Enviar Mensagem</button>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- Floating contacts -->
+<div class="fab" aria-hidden="false" style="position:fixed;right:18px;bottom:18px;z-index:140;display:flex;flex-direction:column;gap:10px">
+  <a href="https://wa.me/244944778154" target="_blank" title="WhatsApp" style="display:inline-flex;align-items:center;justify-content:center;width:46px;height:46px;border-radius:50%;background:var(--saf-emerald);color:#fff;text-decoration:none;box-shadow:0 8px 24px rgba(0,0,0,0.18);font-size:18px">W</a>
+  <a href="mailto:safconsulto@gmail.com" title="Email" style="display:inline-flex;align-items:center;justify-content:center;width:46px;height:46px;border-radius:50%;background:var(--saf-emerald);color:#fff;text-decoration:none;box-shadow:0 8px 24px rgba(0,0,0,0.18);font-size:18px">✉</a>
+</div>
+
+<!-- Cart indicator -->
+<div id="cartIndicator" class="cart-indicator" title="Ver carrinho">
+  Carrinho (<span id="cartCount">0</span>)
+</div>
+
+<!-- Modal: escolha contato -->
+<div id="modalBackdrop" class="modal-backdrop" aria-hidden="true">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <h3 id="modalTitle">Comprar planilha</h3>
+    <p id="modalDesc" class="small">Escolha como quer entrar em contacto para adquirir esta planilha:</p>
+
+    <div class="opt" style="margin-top:12px">
+      <div>
+        <div style="font-weight:800">📱 WhatsApp</div>
+        <div class="small">Contacte-nos via WhatsApp (+244 944 778 154)</div>
+      </div>
+      <div>
+        <button id="modalWhats" class="btn btn-primary">Abrir WhatsApp</button>
+      </div>
+    </div>
+
+    <div class="opt">
+      <div>
+        <div style="font-weight:800">✉️ Email</div>
+        <div class="small">Enviar e-mail para safconsulto@gmail.com</div>
+      </div>
+      <div>
+        <button id="modalEmail" class="btn btn-secondary">Abrir Email</button>
+      </div>
+    </div>
+
+    <div style="text-align:right;margin-top:12px">
+      <button id="modalClose" class="btn" style="background:#eee">Fechar</button>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="foot-col">
+      <div style="font-weight:800">SAF CONSULTORIA</div>
+      <div class="small">Planilhas e documentos baseados nas leis angolanas.</div>
+    </div>
+    <div class="foot-col">
+      <div style="font-weight:700;margin-bottom:6px">Links úteis</div>
+      <div class="small">
+        <div><a href="#">Termos e Condições</a></div>
+        <div><a href="#">Política de Privacidade</a></div>
+      </div>
+    </div>
+    <div class="foot-col">
+      <div style="font-weight:700;margin-bottom:6px">2025 SAF CONSULTORIA</div>
+      <div class="small">Luanda — Angola</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* ===== Helpers ===== */
+function $(sel, ctx=document) { return ctx.querySelector(sel); }
+function $$(sel, ctx=document) { return Array.from(ctx.querySelectorAll(sel)); }
+
+/* ===== Smooth menu scrolling ===== */
+$$('nav.desktop a[data-scroll], .actions a[data-scroll]').forEach(a=>{
+  a.addEventListener('click', function(e){
+    const target = a.getAttribute('data-scroll');
+    if(!target) return;
+    e.preventDefault();
+    const el = document.querySelector(target);
+    if(el) el.scrollIntoView({behavior:'smooth', block:'start'});
+  });
+});
+
+/* ===== Mobile menu toggle ===== */
+function toggleMobileMenu(){
+  const nav = document.querySelector('nav.desktop');
+  if(!nav) return;
+  nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
+}
+
+/* ===== Search (simple filter) ===== */
+$('#searchBtn').addEventListener('click', () => {
+  const q = $('#searchInput').value.trim().toLowerCase();
+  if(!q){ location.hash = '#modelos'; return; }
+  document.querySelectorAll('.card').forEach(card=>{
+    const text = (card.innerText||'').toLowerCase();
+    card.style.display = text.includes(q) ? '' : 'none';
+  });
+});
+
+/* ===== Contact form (simulate save) ===== */
+$('#contactForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  const n = $('#cname').value.trim();
+  const em = $('#cemail').value.trim();
+  const msg = $('#cmessage').value.trim();
+  if(!n||!em||!msg){ alert('Por favor preenche todos os campos.'); return; }
+  const contacts = JSON.parse(localStorage.getItem('saf_contacts')||'[]');
+  contacts.unshift({id:Date.now(),name:n,email:em,message:msg,date:new Date().toISOString()});
+  localStorage.setItem('saf_contacts', JSON.stringify(contacts));
+  alert('Obrigado! Mensagem recebida (simulação).');
+  this.reset();
+});
+
+/* ===== Reveal on scroll ===== */
+const sections = document.querySelectorAll('section');
+function reveal(){ sections.forEach(s=>{ const r = s.getBoundingClientRect(); if(r.top < window.innerHeight-80) s.classList.add('visible'); }); }
+window.addEventListener('scroll', reveal); window.addEventListener('load', reveal);
+
+/* ===== Planilhas info (titles & short desc) ===== */
+const PLANILHAS_INFO = {
+  'dashboard-financeiro': { title: 'Dashboard Financeiro', desc: 'KPIs e gráficos de performance.' },
+  'apuramento-impostos': { title: 'Apuramento de Impostos', desc: 'Planilha para cálculo de tributos.' },
+  'controle-salarios': { title: 'Controle de Salários', desc: 'Cálculo de salários e contribuições.' },
+  'curva-abc': { title: 'Curva ABC', desc: 'Classificação ABC do stock e priorização.' },
+  'balanco': { title: 'Balanço Patrimonial', desc: 'Apresentação da situação patrimonial.' },
+  'dr': { title: 'Demonstração de Resultados (DR)', desc: 'Resultado do exercício e análise de margens.' },
+  'fluxo-caixa': { title: 'Fluxo de Caixa Mensal', desc: 'Controle de entradas e saídas mensais.' },
+  'folha-pagamento': { title: 'Folha de Pagamento + IRT', desc: 'Folha e cálculos de retenções.' },
+  'livro-vendas-compras': { title: 'Livro de Vendas e Compras (com IVA)', desc: 'Registo fiscal de vendas e compras.' },
+  'controle-stock': { title: 'Controle de Stock / Inventário', desc: 'Gestão de inventário e movimentos.' },
+  'balancete': { title: 'Balancete / DR', desc: 'Balancete e Demonstração de Resultados.' },
+  'mapa-iva': { title: 'Mapa de IVA e Relatórios Fiscais', desc: 'Apresentação do IVA a pagar/recuperar.' },
+  'contratos-recibos': { title: 'Contratos, Fichas e Recibos', desc: 'Modelos administrativos padrão.' },
+  'documentos-contabeis': { title: 'Documentos Contabilísticos (Pacote)', desc: 'Pacote de documentos para apresentação financeira.' }
+};
+
+/* ===== Cart (localStorage) ===== */
+function getCart(){ return JSON.parse(localStorage.getItem('saf_cart')||'[]'); }
+function saveCart(cart){ localStorage.setItem('saf_cart', JSON.stringify(cart)); updateCartCount(); }
+function updateCartCount(){ $('#cartCount').innerText = getCart().length; }
+
+/* ===== Top alert show/hide ===== */
+const topAlert = $('#topAlert');
+let topAlertTimer = null;
+function showTopAlert(msg){
+  topAlert.textContent = msg || '✅ Planilha adicionada ao carrinho com sucesso!';
+  topAlert.style.display = 'block';
+  topAlert.style.opacity = '1';
+  // clear previous timer
+  if(topAlertTimer) clearTimeout(topAlertTimer);
+  topAlertTimer = setTimeout(()=> {
+    topAlert.style.transition = 'opacity 400ms';
+    topAlert.style.opacity = '0';
+    setTimeout(()=> { topAlert.style.display = 'none'; topAlert.style.transition = ''; }, 420);
+  }, 3000); // hide after 3s
+}
+
+/* ===== Modal logic ===== */
+const modalBackdrop = $('#modalBackdrop');
+const modalTitle = $('#modalTitle');
+const modalDesc = $('#modalDesc');
+const modalWhats = $('#modalWhats');
+const modalEmail = $('#modalEmail');
+const modalClose = $('#modalClose');
+
+function openModal(planilha){
+  modalTitle.innerText = `Comprar: ${planilha.title}`;
+  modalDesc.innerText = `Escolha como quer entrar em contacto para adquirir esta planilha:`;
+  modalBackdrop.style.display = 'flex';
+  modalBackdrop.setAttribute('aria-hidden','false');
+
+  // wire buttons
+  modalWhats.onclick = function(){
+    const waText = encodeURIComponent(`Olá, tenho interesse na planilha: ${planilha.title}. Como proceder com a compra?`);
+    window.open(`https://wa.me/244944778154?text=${waText}`,'_blank');
+  };
+  modalEmail.onclick = function(){
+    const subject = encodeURIComponent(`Interesse em comprar: ${planilha.title}`);
+    const body = encodeURIComponent(`Olá,\n\nGostaria de adquirir a planilha: ${planilha.title}.\n\nPor favor informe preço e instruções de pagamento.\n\nObrigado.`);
+    window.location.href = `mailto:safconsulto@gmail.com?subject=${subject}&body=${body}`;
+  };
+}
+function closeModal(){ modalBackdrop.style.display = 'none'; modalBackdrop.setAttribute('aria-hidden','true'); }
+modalClose.addEventListener('click', closeModal);
+modalBackdrop.addEventListener('click', function(e){ if(e.target === modalBackdrop) closeModal(); });
+
+/* ===== When user clicks 'Adicionar ao Carrinho' ===== */
+function attachAddButtons(){
+  $$('.add-cart-btn').forEach(btn=>{
+    btn.addEventListener('click', function(){
+      const planilhaId = btn.getAttribute('data-id') || btn.dataset.id;
+      const info = PLANILHAS_INFO[planilhaId] || { title: beautify(planilhaId), desc: '' };
+      // add to cart
+      const cart = getCart();
+      cart.push({ id: planilhaId, name: info.title, date: new Date().toISOString() });
+      saveCart(cart);
+      // show top alert
+      showTopAlert(`✅ "${info.title}" adicionada ao carrinho com sucesso!`);
+      // small delay so user sees alert then modal appears (0.35s)
+      setTimeout(()=> openModal(info), 350);
+    });
+  });
+}
+function beautify(slug){
+  return slug ? slug.split('-').map(w=>w.charAt(0).toUpperCase()+w.slice(1)).join(' ') : 'Planilha';
+}
+
+/* ===== Cart indicator functions ===== */
+$('#cartIndicator').addEventListener('click', function(){
+  const cart = getCart();
+  if(cart.length === 0){ alert('O seu carrinho está vazio.'); return; }
+  // show summary in prompt style
+  const list = cart.map((c,i)=>`${i+1}. ${c.name}`).join('\n');
+  const action = prompt(`Itens no carrinho:\n\n${list}\n\nAções:\n1 - Contactar via WhatsApp\n2 - Remover item (ex: 2)\n3 - Esvaziar carrinho\n\nEscreva 1, 2 ou 3:`);
+  if(!action) return;
+  if(action.trim() === '1'){
+    const waText = encodeURIComponent(`Olá, tenho interesse em comprar as planilhas: ${cart.map(c=>c.name).join(' | ')}. Como proceder?`);
+    window.open(`https://wa.me/244944778154?text=${waText}`,'_blank');
+  } else if(action.trim() === '2'){
+    const idx = prompt('Digite o número do item a remover:');
+    const i = parseInt(idx,10) - 1;
+    if(!isNaN(i) && i >= 0 && i < cart.length){
+      cart.splice(i,1);
+      saveCart(cart);
+      alert('Item removido.');
+    } else alert('Número inválido.');
+  } else if(action.trim() === '3'){
+    if(confirm('Tem certeza que deseja esvaziar o carrinho?')){
+      saveCart([]);
+      alert('Carrinho esvaziado.');
+    }
+  } else {
+    alert('Ação cancelada ou inválida.');
+  }
+});
+
+/* ===== Feedback handling (localStorage) ===== */
+function loadFeedback(){
+  const list = JSON.parse(localStorage.getItem('saf_feedback')||'[]');
+  renderFeedback(list);
+}
+function renderFeedback(list){
+  const dest = $('#feedbackList');
+  if(!dest) return;
+  if(!list || list.length === 0){ dest.innerHTML = '<p class="small">Nenhum comentário ainda.</p>'; return; }
+  dest.innerHTML = list.map(f => `
+    <div class="comment">
+      <strong>${escapeHtml(f.name)}</strong> <small style="color:#8b9999">(${(new Date(f.date)).toLocaleString()})</small>
+      <p style="margin-top:6px">${escapeHtml(f.text)}</p>
+    </div>
+  `).join('');
+}
+$('#btnFeedback').addEventListener('click', function(){
+  const name = ($('#fb-name').value || '').trim();
+  const email = ($('#fb-email').value || '').trim();
+  const text = ($('#fb-text').value || '').trim();
+  if(!name || !text){ alert('Por favor preencha o nome e o comentário.'); return; }
+  const list = JSON.parse(localStorage.getItem('saf_feedback')||'[]');
+  list.unshift({ name, email, text, date: new Date().toISOString() });
+  localStorage.setItem('saf_feedback', JSON.stringify(list));
+  $('#fb-name').value = ''; $('#fb-email').value = ''; $('#fb-text').value = '';
+  renderFeedback(list);
+  alert('Obrigado pelo teu comentário!');
+});
+
+/* small helper */
+function escapeHtml(unsafe) {
+  return String(unsafe)
+       .replace(/&/g, "&amp;")
+       .replace(/</g, "&lt;")
+       .replace(/>/g, "&gt;")
+       .replace(/"/g, "&quot;")
+       .replace(/'/g, "&#039;");
+}
+
+/* ===== Init on load ===== */
+window.addEventListener('load', function(){
+  attachAddButtons();
+  updateCartCount();
+  loadFeedback();
+  // Make nav links clickable on mobile too
+  $$('nav.desktop a').forEach(a=>{
+    a.addEventListener('click', (e)=>{
+      const target = a.getAttribute('data-scroll');
+      if(target){ e.preventDefault(); document.querySelector(target).scrollIntoView({behavior:'smooth'}); }
+    });
+  });
+});
+</script>
+</body>
+</html>
