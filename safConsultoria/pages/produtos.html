@@ -1,0 +1,575 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Produtos - SAF CONSULTORIA</title>
+    <!-- favicon -->
+    <link rel="icon" href="../image/image1.jpg" type="image1.jpg" />
+    <!-- link CSS -->
+     <link rel="stylesheet" href="../CSS/produtos.css">
+    
+    <!-- link JScript -->
+    <script src="JS/script.js" defer></script>
+  </head>
+  <body>
+    <!-- Top alert -->
+    <!-- <div id="topAlert" class="top-alert" role="status" aria-live="polite">
+      ✅ Planilha adicionada ao carrinho com sucesso!
+    </div> -->
+
+    <!-- Skip link -->
+    <a href="#main" class="skip">Ir para o conteúdo</a>
+
+    <!-- Topbar institucional -->
+    <div class="topbar" aria-hidden="false">
+      <div class="inner">
+        <a href="#" target="_blank">Portal do Governo</a>
+        <a href="#">Transparência</a>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+      <div class="header-inner">
+        <a class="brand" href="#inicio" aria-label="SAF Consultoria">
+          <img src="../image/image2.jpg" alt="">
+          <div>
+            <div class="title">SAF CONSULTORIA</div>
+            <div class="subtitle">Planilhas & Documentos Legais (Angola)</div>
+          </div>
+        </a>
+
+        <nav class="desktop" aria-label="Menu principal">
+          <a href="../index.html">Início</a>
+          <a href="../pages/servicos.html">Serviços</a>
+          <a href="../pages/produtos.html">Produtos</a>
+          <a href="#contactos" data-scroll="#contactos"> Contactos</a>
+        </nav>
+
+        <div style="display: flex; gap: 10px; align-items: center">
+          <div class="search" role="search">
+            <input
+              id="searchInput"
+              type="search"
+              placeholder="Pesquisar documentos..."
+              aria-label="Pesquisar"
+            />
+            <button id="searchBtn" title="Pesquisar">OK</button>
+          </div>
+          <button
+            class="mobile-toggle"
+            aria-label="Abrir menu"
+            onclick="toggleMobileMenu()"
+          >
+            ☰
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+    <main id="main">
+      <!-- HERO -->
+      <section id="inicio" class="hero" aria-labelledby="heroTitle">
+        <div class="wrap">
+          <h1 id="heroTitle">
+            Planilhas e documentos baseados na legislação angolana
+          </h1>
+          <p>
+            Modelos prontos, dashboards e guias legais para apoiar
+            contabilistas, gestores e empresas em Angola.
+          </p>
+          <div class="actions" style="margin-top: 16px">
+            <a class="btn doc" data-scroll="#documentos">
+              Explorar Documentos</a
+            >
+            <a href="#planilhas" class="btn sheet" data-scroll="#planilhas" >Ver Planilhas</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- CAROUSEL (kept simple) -->
+      <section
+        aria-label="Destaques"
+        class="section"
+        style="padding-top: 18px; padding-bottom: 18px"
+      >
+        <div
+          class="carousel-wrap"
+          aria-hidden="false"
+          style="max-width: var(--maxw); margin: 0 auto"
+        >
+          <div
+            class="carousel"
+            id="carousel"
+            style="display: flex; overflow: hidden"
+          >
+            <div
+              class="slide"
+              style="
+                min-width: 100%;
+                display: flex;
+                align-items: center;
+                gap: 14px;
+                padding: 22px;
+                background: linear-gradient(
+                  90deg,
+                  rgba(0, 119, 119, 0.04),
+                  rgba(0, 185, 185, 0.02)
+                );
+              "
+            >
+              <img
+                src="../image/image2.jpg"
+                alt="Planilhas"
+                style="
+                  width: 140px;
+                  height: 92px;
+                  object-fit: cover;
+                  border-radius: 8px;
+                "
+              />
+              <div>
+                <h3>Planilhas de Gestão Financeira</h3>
+                <p class="meta">
+                  Fluxo de caixa, conciliação e projeções adaptadas ao contexto
+                  angolano.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+          
+      <!-- MODELOS -->
+      <main id="planilhas">
+        <section class="section" aria-labelledby="modelosTitle">
+          <div class="title" id="modelosTitle">
+            <h2>Modelos de Documento</h2>
+          </div>
+          <div class="grid" id="docsGrid">
+            <article class="card" data-id="fluxo-caixa">
+              <h3>Fluxo de Caixa Mensal</h3>
+              <p>Todas as empresas precisam controlar entradas e saídas.</p>
+              <div class="meta">Formato: EXCEL, POWER BI, ODOO</div>
+              <div class="card-actions">
+                <div class="left">
+                  <small class="meta">EXCEL • Modelo</small>
+                </div>
+                <div>
+                  <button class="add-cart-btn" data-id="fluxo-caixa">
+                    Adicionar ao Carrinho
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article class="card" data-id="folha-pagamento">
+              <h3>Folha de Pagamento + Cálculo de IRT e Segurança Social</h3>
+              <p>Obrigatório por lei trabalhista.</p>
+              <div class="meta">Formato: EXCEL, POWER BI, ODOO</div>
+              <div class="card-actions">
+                <div class="left">
+                  <small class="meta">EXCEL • Modelo</small>
+                </div>
+                <div>
+                  <button class="add-cart-btn" data-id="folha-pagamento">
+                    Adicionar ao Carrinho
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article class="card" data-id="livro-vendas-compras">
+              <h3>Livro de Vendas e Compras (com IVA)</h3>
+              <p>Necessário para o imposto mensal.</p>
+              <div class="meta">Formato: EXCEL, POWER BI, ODOO</div>
+              <div class="card-actions">
+                <div class="left">
+                  <small class="meta">EXCEL • Modelo</small>
+                </div>
+                <div>
+                  <button class="add-cart-btn" data-id="livro-vendas-compras">
+                    Adicionar ao Carrinho
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article class="card" data-id="controle-stock">
+              <h3>Controle de Stock / Inventário</h3>
+              <p>Evita desvios e controla mercadorias.</p>
+              <div class="meta">Formato: EXCEL, POWER BI, ODOO</div>
+              <div class="card-actions">
+                <div class="left">
+                  <small class="meta">EXCEL • Modelo</small>
+                </div>
+                <div>
+                  <button class="add-cart-btn" data-id="controle-stock">
+                    Adicionar ao Carrinho
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article class="card" data-id="balancete">
+              <h3>Balancete / DR</h3>
+              <p>Análise do desempenho financeiro.</p>
+              <div class="meta">Formato: EXCEL, POWER BI, ODOO</div>
+              <div class="card-actions">
+                <div class="left">
+                  <small class="meta">EXCEL • Modelo</small>
+                </div>
+                <div>
+                  <button class="add-cart-btn" data-id="balancete">
+                    Adicionar ao Carrinho
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article class="card" data-id="mapa-iva">
+              <h3>Mapa de IVA e Relatórios Fiscais</h3>
+              <p>Entrega obrigatória às Finanças.</p>
+              <div class="meta">Formato: EXCEL, POWER BI, ODOO</div>
+              <div class="card-actions">
+                <div class="left">
+                  <small class="meta">EXCEL • Modelo</small>
+                </div>
+                <div>
+                  <button class="add-cart-btn" data-id="mapa-iva">
+                    Adicionar ao Carrinho
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article class="card" data-id="contratos-recibos">
+              <h3>Contratos, Fichas e Recibos padrão SAF</h3>
+              <p>Parte administrativa complementar.</p>
+              <div class="meta">Formato: EXCEL, PDF</div>
+              <div class="card-actions">
+                <div class="left"><small class="meta">Modelos</small></div>
+                <div>
+                  <button class="add-cart-btn" data-id="contratos-recibos">
+                    Adicionar ao Carrinho
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article class="card" data-id="documentos-contabeis">
+              <h3>Documentos Contabilísticos (Pacote)</h3>
+              <p>Documentos para apresentar a situação financeira.</p>
+              <div class="meta">Formato: EXCEL, PDF</div>
+              <div class="card-actions">
+                <div class="left"><small class="meta">Pacote</small></div>
+                <div>
+                  <button class="add-cart-btn" data-id="documentos-contabeis">
+                    Adicionar ao Carrinho
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- PLANILHAS -->
+        <section class="section">
+          <div class="title"><h2>Planilhas e Dashboards</h2></div>
+          <div class="grid" id="sheetsGrid">
+            <article class="card" data-id="dashboard-financeiro">
+              <h3>Dashboard Financeiro</h3>
+              <p>KPIs e gráficos de performance.</p>
+              <div class="meta">Excel • Interativo</div>
+              <div class="card-actions">
+                <div class="left"><small class="meta">Dashboard</small></div>
+                <div>
+                  <button class="add-cart-btn" data-id="dashboard-financeiro">
+                    Adicionar ao Carrinho
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article class="card" data-id="apuramento-impostos">
+              <h3>Apuramento de Impostos</h3>
+              <p>Planilha para cálculo de tributos.</p>
+              <div class="meta">Excel • Guia incluído</div>
+              <div class="card-actions">
+                <div class="left"><small class="meta">Fiscal</small></div>
+                <div>
+                  <button class="add-cart-btn" data-id="apuramento-impostos">
+                    Adicionar ao Carrinho
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article class="card" data-id="controle-salarios">
+              <h3>Controle de Salários</h3>
+              <p>Cálculo de salários e contribuições.</p>
+              <div class="meta">Excel • Configurável</div>
+              <div class="card-actions">
+                <div class="left"><small class="meta">RH</small></div>
+                <div>
+                  <button class="add-cart-btn" data-id="controle-salarios">
+                    Adicionar ao Carrinho
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article class="card" data-id="curva-abc">
+              <h3>Curva ABC</h3>
+              <p>Classificação ABC do stock e priorização.</p>
+              <div class="meta">Excel • Análise</div>
+              <div class="card-actions">
+                <div class="left"><small class="meta">Estoque</small></div>
+                <div>
+                  <button class="add-cart-btn" data-id="curva-abc">
+                    Adicionar ao Carrinho
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article class="card" data-id="balanco">
+              <h3>Balanço Patrimonial</h3>
+              <p>Apresentação da situação patrimonial.</p>
+              <div class="meta">Excel • Demonstrativo</div>
+              <div class="card-actions">
+                <div class="left"><small class="meta">Financeiro</small></div>
+                <div>
+                  <button class="add-cart-btn" data-id="balanco">
+                    Adicionar ao Carrinho
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article class="card" data-id="dr">
+              <h3>Demonstração de Resultados (DR)</h3>
+              <p>Resultado do exercício e análise de margens.</p>
+              <div class="meta">Excel • Apresentação</div>
+              <div class="card-actions">
+                <div class="left"><small class="meta">Financeiro</small></div>
+                <div>
+                  <button class="add-cart-btn" data-id="dr">
+                    Adicionar ao Carrinho
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+      </main>
+
+
+      <!-- CONTACTOS -->
+      <section id="contactos" class="section" aria-labelledby="contactosTitle">
+        <div class="title" id="contactosTitle"><h2>Contactos</h2></div>
+        <div
+          class="contact-grid"
+          style="
+            max-width: var(--maxw);
+            margin: 0 auto;
+            display: flex;
+            gap: 18px;
+            flex-wrap: wrap;
+            align-items: flex-start;
+          "
+        >
+          <div class="contact-card card">
+            <h3>Fale connosco</h3>
+            <p class="meta">Pedidos de modelos personalizados e consultoria.</p>
+            <p style="margin-top: 10px">
+              <strong>Email:</strong>
+              <a href="mailto:safconsulto@gmail.com">safconsulto@gmail.com</a
+              ><br />
+              <strong>Telefone:</strong> +244 944 778 154<br />
+              <strong>Local:</strong> Luanda — Angola
+            </p>
+          </div>
+
+          <form
+            id="contactForm"
+            class="card"
+            aria-label="Formulário de contacto"
+            style="
+              flex: 1;
+              min-width: 320px;
+              display: flex;
+              flex-direction: column;
+              gap: 10px;
+            "
+          >
+            <label for="cname">Nome</label>
+            <input id="cname" name="cname" placeholder="O teu nome" required />
+            <label for="cemail">Email</label>
+            <input
+              id="cemail"
+              name="cemail"
+              type="email"
+              placeholder="email@exemplo.tld"
+              required
+            />
+            <label for="cmessage">Mensagem</label>
+            <textarea
+              id="cmessage"
+              name="cmessage"
+              placeholder="Escreve a tua mensagem..."
+              required
+            ></textarea>
+            <button
+              type="submit"
+              style="
+                background: var(--saf-emerald-dark);
+                color: #fff;
+                padding: 10px 14px;
+                border-radius: 8px;
+                border: 0;
+                cursor: pointer;
+                font-weight: 700;
+              "
+            >
+              Enviar Mensagem
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Floating contacts -->
+    <div
+      class="fab"
+      aria-hidden="false"
+      style="
+        position: fixed;
+        right: 18px;
+        bottom: 18px;
+        z-index: 140;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      "
+    >
+      <a
+        href="https://wa.me/244944778154"
+        target="_blank"
+        title="WhatsApp"
+        style="
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          width: 46px;
+          height: 46px;
+          border-radius: 50%;
+          background: var(--saf-emerald);
+          color: #fff;
+          text-decoration: none;
+          box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+          font-size: 18px;
+        "
+        >W</a
+      >
+      <a
+        href="mailto:safconsulto@gmail.com"
+        title="Email"
+        style="
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          width: 46px;
+          height: 46px;
+          border-radius: 50%;
+          background: var(--saf-emerald);
+          color: #fff;
+          text-decoration: none;
+          box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+          font-size: 18px;
+        "
+        >✉</a
+      >
+    </div>
+
+    <!-- Cart indicator -->
+    <div id="cartIndicator" class="cart-indicator" title="Ver carrinho">
+      Carrinho (<span id="cartCount">0</span>)
+    </div>
+
+    <!-- Modal: escolha contato -->
+    <div id="modalBackdrop" class="modal-backdrop" aria-hidden="true">
+      <div
+        class="modal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modalTitle"
+      >
+        <h3 id="modalTitle">Comprar planilha</h3>
+        <p id="modalDesc" class="small">
+          Escolha como quer entrar em contacto para adquirir esta planilha:
+        </p>
+
+        <div class="opt" style="margin-top: 12px">
+          <div>
+            <div style="font-weight: 800">📱 WhatsApp</div>
+            <div class="small">
+              Contacte-nos via WhatsApp (+244 944 778 154)
+            </div>
+          </div>
+          <div>
+            <button id="modalWhats" class="btn btn-primary">
+              Abrir WhatsApp
+            </button>
+          </div>
+        </div>
+
+        <div class="opt">
+          <div>
+            <div style="font-weight: 800">✉️ Email</div>
+            <div class="small">Enviar e-mail para safconsulto@gmail.com</div>
+          </div>
+          <div>
+            <button id="modalEmail" class="btn btn-secondary">
+              Abrir Email
+            </button>
+          </div>
+        </div>
+
+        <div style="text-align: right; margin-top: 12px">
+          <button id="modalClose" class="btn" style="background: #eee">
+            Fechar
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-inner">
+        <div class="foot-col">
+          <div style="font-weight: 800">SAF CONSULTORIA</div>
+          <div class="small">
+            Planilhas e documentos baseados nas leis angolanas.
+          </div>
+        </div>
+        <div class="foot-col">
+          <div style="font-weight: 700; margin-bottom: 6px">Links úteis</div>
+          <div class="small">
+            <div><a href="#">Termos e Condições</a></div>
+            <div><a href="#">Política de Privacidade</a></div>
+          </div>
+        </div>
+        <div class="foot-col">
+          <div style="font-weight: 700; margin-bottom: 6px">
+            2025 SAF CONSULTORIA
+          </div>
+          <div class="small">Luanda — Angola</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
