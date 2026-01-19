@@ -69,8 +69,11 @@ body{
 header{position:sticky;
   top:0;
   z-index:120;
-  background:linear-gradient(90deg,var(--saf-emerald),var(--saf-emerald-dark));
-  box-shadow:0 6px 18px rgba(0,0,0,0.06)}
+  background:linear-gradient(90deg, 
+  var(--saf-emerald),
+  var(--saf-emerald-dark));
+  box-shadow:0 6px 18px rgba(0,0,0,0.06)
+}
 
 .header-inner{max-width:var(--maxw);
   margin:0 auto;
@@ -162,7 +165,8 @@ nav.desktop a:hover{background:rgba(255,255,255,0.06)}
   text-decoration:none;
   font-weight:800}
 
-.btn.doc{background:linear-gradient(180deg,var(--saf-emerald-dark),var(--saf-emerald));
+.btn.doc{background:linear-gradient(180deg,var(--saf-emerald-dark),
+  var(--saf-emerald));
   color:#fff}
 
 .btn.sheet{background:linear-gradient(180deg,var(--saf-accent),#00dcdc);
