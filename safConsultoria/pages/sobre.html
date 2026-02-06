@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sobre - SAF CONSULTORIA</title>
+    <link rel="shortcut icon" href="../image/saf-logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS/sobre.css">
+</head>
+<body>
+    
+    <a href="#main" class="skip">Ir para o conteúdo</a>
+
+    <!-- Topbar institucional -->
+    <div class="topbar" aria-hidden="false">
+      <div class="inner">
+        <a href="#" target="_blank">Portal do Governo</a>
+        <a href="#">Transparência</a>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+      <div class="header-inner">
+        <a class="brand" href="#inicio" aria-label="SAF Consultoria">
+          <img src="../image/saf-logo.jpg" alt="">
+          <div>
+        <div class="title">SAF CONSULTORIA</div>
+        <div class="subtitle">Profissionalismo que se vê <br>e Resultados que se sentem</div>
+      </div>
+        </a>
+
+        <nav class="desktop" aria-label="Menu principal">
+          <a href="../index.html" target="_self">Início</a>
+          <a href="servicos.html" target="_self">Serviços</a>
+          <a href="produtos.html" target="_self">Produtos</a>
+          <a href="sobre.html" target="_self"> Sobre</a>
+        </nav>
+
+        <div style="display: flex; gap: 10px; align-items: center">
+          <div class="search" role="search">
+            <input
+              id="searchInput"
+              type="search"
+              placeholder="Pesquisar documentos..."
+              aria-label="Pesquisar"
+            />
+            <button id="searchBtn" title="Pesquisar">OK</button>
+          </div>
+          <button
+            class="mobile-toggle"
+            aria-label="Abrir menu"
+            onclick="toggleMobileMenu()"
+          >
+            ☰
+          </button>
+        </div>
+      </div>
+    </header>
+
+
+   <main id="main">
+
+    <section id="sobre" aria-label="Destaques" class="section" style="padding-top:18px;padding-bottom:18px">
+    <div class="carousel-wrap" aria-hidden="false" style="max-width:var(--maxw);margin:0 auto">
+      <div class="carousel" id="carousel" style="display:flex;overflow:hidden">
+        <div class="slide" style="min-width:100%;display:flex;align-items:center;gap:14px;padding:22px;background:linear-gradient(90deg, rgba(0,119,119,0.04), rgba(0,185,185,0.02))">
+          <div>
+            <h3 style="color:var(--saf-header-dark);font-size:24px;">Sobre Nós</h3>
+            <p>A <strong>Saf Consultoria</strong> é uma empresa angolana com especialistas que possuem especificações em diversos ramos relacionados.</p>
+            <p>Prestando Serviços em diferentes instituições privadas e públicas, nacionais e internacionais a mais de 2 anos.</p>
+            <p>Apresentamos Consultoria e Suporte para Candidaturas Profissionais, Criação de Currículos Profissionais, Documentos Administrativos, Soluções Administrativas para Pequenos Negócios, Freelancers, Ensino e Treinamento Profisional <b>(Excel, Contabilidade, Contabilidade, Power BI).</b></p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- CONTACTOS -->
+  <section id="contactos" class="section" aria-labelledby="contactosTitle">
+    <div class="title" id="contactosTitle"><h2>Contactos</h2></div>
+    <div class="contact-grid" style="max-width:var(--maxw);margin:0 auto;display:flex;gap:18px;flex-wrap:wrap;align-items:flex-start">
+      <div class="contact-card card">
+        <h3>Fale connosco</h3>
+        <p class="meta">Pedidos de modelos personalizados e consultoria.</p>
+        <p style="margin-top:10px"><strong>Email:</strong> <a href="mailto:safconsulto@gmail.com">safconsulto@gmail.com</a><br>
+        <strong>Telefone:</strong> +244 944 778 154<br>
+        <strong>Local:</strong> Luanda — Angola</p>
+      </div>
+
+      <form id="contactForm" class="card" aria-label="Formulário de contacto" style="flex:1;min-width:320px;display:flex;flex-direction:column;gap:10px">
+        <label for="cname">Nome</label>
+        <input id="cname" name="cname" placeholder="O teu nome" required>
+        <label for="cemail">Email</label>
+        <input id="cemail" name="cemail" type="email" placeholder="email@exemplo.tld" required>
+        <label for="cmessage">Mensagem</label>
+        <textarea id="cmessage" name="cmessage" placeholder="Escreve a tua mensagem..." required></textarea>
+        <button type="submit" style="background:var(--saf-emerald-dark);color:#fff;padding:10px 14px;border-radius:8px;border:0;cursor:pointer;font-weight:700">Enviar Mensagem</button>
+      </form>
+    </div>
+  </section>
+   </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-inner">
+        <div class="foot-col">
+          <div style="font-weight: 800">SAF CONSULTORIA</div>
+          <div class="small">
+            Planilhas e documentos baseados nas leis angolanas.
+          </div>
+        </div>
+        <div class="foot-col">
+          <div style="font-weight: 700; margin-bottom: 6px">Links úteis</div>
+          <div class="small">
+            <div><a href="#">Termos e Condições</a></div>
+            <div><a href="#">Política de Privacidade</a></div>
+          </div>
+        </div>
+        <div class="foot-col">
+          <div style="font-weight: 700; margin-bottom: 6px">
+            2025 SAF CONSULTORIA
+          </div>
+          <div class="small">Luanda — Angola</div>
+        </div>
+      </div>
+    </footer>
+
+</body>
+</html>
