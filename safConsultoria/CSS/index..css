@@ -8,8 +8,8 @@
 
 /* Variables */
 :root {
-  --saf-emerald: #007777;
-  --saf-emerald-dark: #006b6b;
+  --saf-bg: #007777;
+  --saf-header-dark: #006b6b;
   --saf-accent: #00bebe;
   --bg: #f7f9fa;
   --card: #fff;
@@ -96,8 +96,8 @@ header {
   z-index: 120;
   background: linear-gradient(
     90deg,
-    var(--saf-emerald),
-    var(--saf-emerald-dark)
+    var(--saf-bg),
+    var(--saf-header-dark)
   );
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
 }
