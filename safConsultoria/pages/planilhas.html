@@ -5,19 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Serviços - SAF CONSULTORIA</title>
     <link rel="shortcut icon" href="../image/saf-logo.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="../CSS/servicos.css">
+    <link rel="stylesheet" href="../CSS/planilha.css">
 </head>
 <body>
     
     <a href="#main" class="skip">Ir para o conteúdo</a>
 
     <!-- Topbar institucional -->
-    <div class="topbar" aria-hidden="false">
+        <div class="topbar" aria-hidden="false">
       <div class="inner">
         <a href="#" target="_blank">Portal do Governo</a>
-        <a href="#">Transparência</a>
+        <a href="pages/feedback.html">Feedback</a>
+        <a href="pages/contacto.html">Contacto</a>
       </div>
     </div>
+
 
     <!-- Header -->
     <header>
@@ -30,11 +32,13 @@
       </div>
         </a>
 
+        
         <nav class="desktop" aria-label="Menu principal">
-          <a href="../index.html" target="_self">Início</a>
-          <a href="../pages/servicos.html" target="_self">Serviços</a>
-          <a href="../pages/produtos.html" target="_self">Produtos</a>
-          <a href="sobre.html" target="_self"> Sobre</a>
+          <a data-scroll="#inicio">Início</a>
+          <a href="../pages/consultoria.html" target="_self">Consultoria</a>
+          <a href="../pages/planilhas.html" target="_self">Planilha</a>
+          <a href="../pages/formacao.html" target="_self" >Formação</a>
+          
         </nav>
 
         <div style="display: flex; gap: 10px; align-items: center">
@@ -42,7 +46,7 @@
             <input
               id="searchInput"
               type="search"
-              placeholder="Pesquisar documentos..."
+              placeholder="Pesquise aqui..."
               aria-label="Pesquisar"
             />
             <button id="searchBtn" title="Pesquisar">OK</button>
